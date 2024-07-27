@@ -91,6 +91,18 @@ The image below displays the microcontroller board or PCB with various component
 
    ![WhatsApp Image 2024-07-27 at 1 06 04 PM (2)](https://github.com/user-attachments/assets/e4addc8b-50a2-4ecb-b3c1-e71a71b9a50f)
 
+###  A new directory structure is created to organize design files, with subdirectories for components like results and reports.
+
+**LEF Merging**: The technology LEF (.tlef) and cell LEF (.lef) files are merged into a unified format, combining layer and cell information.
+
+**Design Placement**: All design-related files are placed under the designs directory for organization and easy access during subsequent steps.
+![WhatsApp Image 2024-07-27 at 1 06 04 PM (2)](https://github.com/user-attachments/assets/7af31805-654a-4947-8f8b-86f568e0c7b0)
+
+![WhatsApp Image 2024-07-27 at 1 06 04 PM (5)](https://github.com/user-attachments/assets/d71596a2-325c-4d75-89da-a7fd86b81e69)
+
+config.tcl -	contains the configurations used by openLANE </p>
+src -	contains verilog files and constraints file
+
 
     
 
