@@ -62,7 +62,14 @@ The image below displays the microcontroller board or PCB with various component
 </p> 5.cd : Using this command we can move in both ways in the directory tree.</p>
 </p> 6.clear: It clears the terminal screen.
 
-  
+ ### **Now, moving to the work directory where all files related to the workshop are stored**,use the follwoing commands
+    cd Desktop 
+    cd work/tools/ 
+    cd openlane_working_dir/
+    cd openlane/
+    
+   ![WhatsApp Image 2024-07-27 at 1 06 04 PM (1)](https://github.com/user-attachments/assets/4ec71fc5-d882-4fe5-b0ec-c79724a908a4)
+
 
 
  
