@@ -47,6 +47,19 @@ The image below displays the microcontroller board or PCB with various component
  
  ![Screenshot (43)](https://github.com/user-attachments/assets/2cd07053-ac6e-4fc1-8a80-524202b10a9a)
 
+ # DAY 1 (LABS)
+ ## Understanding the use of various linux commands :
+ </p> Open the LINUX Terminal (in desktop directory)
+
+ Important LINUX Commands
+</p> 1. cd : It is used to change the current working directory.
+</p> 2. ls : It lists the contents of a directory.
+</p> 3.ls -ltr : It lists the contents of a directory in long format, sorted by modification time in reverse order (oldest first).
+</p> 4.ls --help: It displays a help message with a list of options and usage information for the "ls" command. Note : You can give any command name and then type "--help" to get info about that command.</p>
+</p> 5.cd : Using this command we can move in both ways in the directory tree.</p>
+</p> 6.clear: It clears the terminal screen.
+  
+
 
  
  
