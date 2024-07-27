@@ -70,6 +70,32 @@ The image below displays the microcontroller board or PCB with various component
     
    ![WhatsApp Image 2024-07-27 at 1 06 04 PM (1)](https://github.com/user-attachments/assets/4ec71fc5-d882-4fe5-b0ec-c79724a908a4)
 
+  ### To enter into bash while being in the openalne dircetory use the  following command
+      docker
+      ./flow.tcl -interactive
+
+      
+   ![WhatsApp Image 2024-07-27 at 1 06 04 PM (3)](https://github.com/user-attachments/assets/76f12cf7-421f-4260-8e0b-d7ab8e36e990)
+
+      
+   
+###  Now, OPENLANE is opened, and we input the required packages using the following command:
+     % package require openlane 0.9 
+     
+### In the 'designs' subdirectory, you will find various pre-built designs. For our purposes, we will focus on the "picorv32a.v" design to execute the RTL to GDS flow. The initial stage of this project involves synthesis. To begin the synthesis for this design, we need to set it up using the following command:
+    prep -design picorv32a
+   
+   ![WhatsApp Image 2024-07-27 at 1 06 04 PM (3)](https://github.com/user-attachments/assets/fbadc046-cb84-4a6e-a4a2-87716d25e083)
+
+   Once the preparation is finished, you'll notice a new directory named with today's date created inside the 'picorv32a' folder within the 'runs' directory.
+
+   ![WhatsApp Image 2024-07-27 at 1 06 04 PM (2)](https://github.com/user-attachments/assets/e4addc8b-50a2-4ecb-b3c1-e71a71b9a50f)
+
+
+    
+
+      
+
 
 
  
