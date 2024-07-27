@@ -15,12 +15,18 @@
 
 # DAY 1
 ## INTERACTION WITH COMPUTERS
-
+![aurdino image](https://github.com/user-attachments/assets/934167cc-feb3-4af0-bec9-a891b39d8f1c)
 
 The Arduino Uno board features a processor as the primary component of interest. The physical design will focus on the macro within the processor, implementing a block-level design.
 The image below displays the microcontroller board or PCB with various components arranged on it.
 
+![Screenshot (45)](https://github.com/user-attachments/assets/edd5523f-5b91-4793-b312-5a36bff1cca2)
 
+## IC Design components and terminolgies
+
+![Screenshot (37)](https://github.com/user-attachments/assets/2b31eba4-ccfe-4397-aece-9a10dcd2eec3)  ![Screenshot (38)](https://github.com/user-attachments/assets/ad9b3a63-0283-4b48-b4b8-902a8b44e191)
+
+</p> CORE : The core is the section of the chip where the fundamental logic of the design is placed.
 
 
 
