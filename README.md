@@ -50,6 +50,9 @@ The image below displays the microcontroller board or PCB with various component
  # DAY 1 (LABS)
  ## Understanding the use of various linux commands :
  </p> Open the LINUX Terminal (in desktop directory)
+ 
+![WhatsApp Image 2024-07-27 at 1 06 04 PM](https://github.com/user-attachments/assets/7f4da44d-13ed-42a7-a444-890eb4604b13)
+
 
  Important LINUX Commands
 </p> 1. cd : It is used to change the current working directory.
@@ -58,6 +61,7 @@ The image below displays the microcontroller board or PCB with various component
 </p> 4.ls --help: It displays a help message with a list of options and usage information for the "ls" command. Note : You can give any command name and then type "--help" to get info about that command.</p>
 </p> 5.cd : Using this command we can move in both ways in the directory tree.</p>
 </p> 6.clear: It clears the terminal screen.
+
   
 
 
