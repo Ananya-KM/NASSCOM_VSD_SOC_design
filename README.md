@@ -101,7 +101,26 @@ The image below displays the microcontroller board or PCB with various component
 ![WhatsApp Image 2024-07-27 at 1 06 04 PM (5)](https://github.com/user-attachments/assets/d71596a2-325c-4d75-89da-a7fd86b81e69)
 
 config.tcl -	contains the configurations used by openLANE </p>
-src -	contains verilog files and constraints file
+src -	contains verilog files and constraints file 
+
+![WhatsApp Image 2024-07-27 at 1 06 04 PM (7)](https://github.com/user-attachments/assets/3c480617-efc9-4f39-904f-6ab097ac5de0)
+
+### Now, To perform synthesis on the design use the following command :
+    % run_synthesis
+    
+![WhatsApp Image 2024-07-27 at 1 06 05 PM (1)](https://github.com/user-attachments/assets/74635651-ca47-415e-bbb3-6a333fa6b19d)
+
+![WhatsApp Image 2024-07-27 at 1 06 05 PM (2)](https://github.com/user-attachments/assets/4d14b6c2-76bf-4fe0-aa50-a076571144ef)
+
+![WhatsApp Image 2024-07-27 at 1 06 05 PM (3)](https://github.com/user-attachments/assets/be1112f6-489a-4c67-a7c4-723837b9f418)
+
+### **Number of D-ff=1613 & Total number of cells=14876**
+
+### **therefore,Flop ratio=(1613/14876)=0.1084296853993**
+
+### **Flop ratio is %=10.84296853993%**
+
+
 
 
     
