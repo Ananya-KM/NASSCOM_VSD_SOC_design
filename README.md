@@ -110,6 +110,12 @@ src -	contains verilog files and constraints file
     
 ![WhatsApp Image 2024-07-27 at 1 06 05 PM (1)](https://github.com/user-attachments/assets/74635651-ca47-415e-bbb3-6a333fa6b19d)
 
+ ### next step is to find the flop ratio.
+
+</p> formaula to find flop ratio is (number of D-ff/Total number of cells) </p>
+
+</p> and to get the percentage(%) multiply it by 100
+
 ![WhatsApp Image 2024-07-27 at 1 06 05 PM (2)](https://github.com/user-attachments/assets/4d14b6c2-76bf-4fe0-aa50-a076571144ef)
 
 ![WhatsApp Image 2024-07-27 at 1 06 05 PM (3)](https://github.com/user-attachments/assets/be1112f6-489a-4c67-a7c4-723837b9f418)
