@@ -220,10 +220,28 @@ The Aspect Ratio is defined as the ratio of the height of the core to its width.
 ## PERFORMING PLACEMENT IN OPENLANE
 After successfully completing floorplanning, the design process progresses to the placement stage, which includes two main phases:
 
-### Global Placement: </p> During this phase, the tool determines the approximate locations for all the standard cells in the design.</p>
-### Detailed Placement: </P> In this phase, the tool finalizes the exact positions for all the standard cells and ensures the placement is legal. Legalization involves verifying that no standard cells overlap and that they are all correctly positioned within the designated site rows.</P>
+### Global Placement:
+</p> During this phase, the tool determines the approximate locations for all the standard cells in the design.</p>
+
+### Detailed Placement:
+</P>  In this phase, the tool finalizes the exact positions for all the standard cells and ensures the placement is legal. Legalization involves verifying that no standard cells overlap and that they are all correctly positioned within the designated site rows.</P>
+
 ### To initiate the placement process, use the following command
     run_placement
+    
+   ![WhatsApp Image 2024-07-29 at 10 55 27 PM](https://github.com/user-attachments/assets/82b5c708-b4d5-4897-a488-f86696a07ebe)
+
+   ![WhatsApp Image 2024-07-29 at 10 55 27 PM (1)](https://github.com/user-attachments/assets/b596055a-082d-4aae-b9c0-918d095b148c)
+
+#### After the Placement is done , we can see 'picorv32a.placement.def' file , open it using MAGIC use the follwoing command:
+     magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def
+
+![WhatsApp Image 2024-07-29 at 10 55 26 PM (1)](https://github.com/user-attachments/assets/d5e6d0bf-3d73-44f9-a443-ab973843577f)
+
+![WhatsApp Image 2024-07-29 at 10 55 26 PM](https://github.com/user-attachments/assets/f750f9c0-aaa0-4864-a137-be506021b8e9)
+
+
+  
     
 
 
