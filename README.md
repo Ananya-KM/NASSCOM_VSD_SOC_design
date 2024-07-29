@@ -15,7 +15,7 @@
 
 # DAY 1
 ## INTERACTION WITH COMPUTERS
-![aurdino image](https://github.com/user-attachments/assets/934167cc-feb3-4af0-bec9-a891b39d8f1c)
+![Screenshot (46)](https://github.com/user-attachments/assets/86c2fab4-2904-4b7c-8a68-ff1daae728ba)
 
 The Arduino Uno board features a processor as the primary component of interest. The physical design will focus on the macro within the processor, implementing a block-level design.
 The image below displays the microcontroller board or PCB with various components arranged on it.
@@ -126,10 +126,40 @@ src -	contains verilog files and constraints file
 
 ### **Flop ratio is %=10.84296853993%**
 
+# DAY 2
+## Floorplan & Powerplan
+</p>  To determine the utilization factor and aspect ratio, we first need to calculate the height and width of the core and die. </p>
 
+![Screenshot (47)](https://github.com/user-attachments/assets/f8329c03-6504-4f20-b87e-3a1bc5a8efa0)
 
+</p> The dimensions of the core area are determined by the design's netlist, which depends on the number of components necessary to implement the logic. Consequently, the height and width of the die area are based on the dimensions of the core area. </p>
 
-    
+</p> For example, consider a netlist that includes two logic gates and two flip-flops. </p> 
+
+![Screenshot (48)](https://github.com/user-attachments/assets/502854c1-bc84-40d1-941c-980384185f32)
+
+</p> Now, if we consider each element having an area of 1 square unit, and the netlist contains 4 elements, the minimum total area required for the core area will be 4 square units.</p>
+
+![Screenshot (49)](https://github.com/user-attachments/assets/2979870b-0016-4c3f-9b7d-d1aeaa63508e)
+
+### Utilization Factor
+
+The Utilization Factor is defined as the ratio of the core area occupied by the netlist to the total core area. In an effective floorplan, the Utilization Factor should not be 1. If the Utilization Factor reaches 1, there will be no available space for adding any additional logic, making it a poor floorplan.
+
+![Screenshot (50)](https://github.com/user-attachments/assets/7cca3ad4-2d7c-4698-bcca-af969f21ad7b)
+
+#### **Utilization Factor = (Area occupied by netlist / Total core area)**
+
+### Aspect Ratio
+
+The Aspect Ratio is defined as the ratio of the height of the core to its width. When the Aspect Ratio is 1, the core is considered square-shaped. If the Aspect Ratio is different from 1, the core will have a rectangular shape.
+
+#### **Aspect Ratio = (Height of the core / Width of the core)**
+![Screenshot (51)](https://github.com/user-attachments/assets/b869917d-fe89-4724-96de-cfcb96cff284)
+
+#### **Utilisation Factor = (4 sq units)/(4sq units) = 1**
+#### **Aspect Ratio = (2 units)/(2 units) = 1 i.e core has Square Shape**
+
 
       
 
