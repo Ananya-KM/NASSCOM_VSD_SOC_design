@@ -170,6 +170,64 @@ The Aspect Ratio is defined as the ratio of the height of the core to its width.
 #### **Utilisation Factor = (4 sq units)/(8 sq units) = 0.5**
 #### **Aspect Ratio = (2 units)/(4 units) = 0.5 i.e core has Rectangular Shape**
 
+# DAY 2 (LABS)
+## STEPS TO RUN FLOORPLAN USING OPENLANE
+</p>To ensure a smooth floorplanning process, designers need to pay close attention to specific parameters, often referred to as switches, which can significantly influence the final floorplan when modified. Key examples of these switches include the utilization factor and the aspect ratio. It is essential for designers to confirm that these parameters meet the project requirements before beginning the floorplanning stage. The image below showcases various types of switches involved in this phase.</p>
+
+
+####  To run the Floorplan Use the following command:
+     % run_floorplan
+![WhatsApp Image 2024-07-29 at 10 55 12 PM](https://github.com/user-attachments/assets/faa0d020-84ed-4e17-a42e-de22b69e8de1)
+
+![WhatsApp Image 2024-07-29 at 10 55 14 PM](https://github.com/user-attachments/assets/fa83f05b-05b3-41e7-8a21-b7c8d81208d7)
+
+![WhatsApp Image 2024-07-29 at 10 55 13 PM](https://github.com/user-attachments/assets/b58de510-cd1b-48ba-8df8-1c97da8b1287)
+
+
+
+</p> After completing the floorplan, you can review the generated report to evaluate aspects such as die area. To visualize the design in a graphical user interface (GUI), the MAGIC tool should be used. </p>
+
+ #### Now, to open this "def" file in magic , use the following command:
+      magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def 
+      
+
+![WhatsApp Image 2024-07-29 at 10 55 15 PM](https://github.com/user-attachments/assets/462fbfa2-37f4-4148-add7-7f2cb5333c26)
+
+ ![WhatsApp Image 2024-07-29 at 10 55 19 PM (2)](https://github.com/user-attachments/assets/79b26cf5-3b25-4340-81e3-926ff072e98a)
+ 
+ Now, we can use 'Magic' tool to expllore the floorplan.</p>
+ 
+![WhatsApp Image 2024-07-29 at 10 55 19 PM (1)](https://github.com/user-attachments/assets/26bf5c33-d69b-4924-a943-1334310f076b)
+
+</p> THe DESIGN ALLIGNMENT INSTRUCTIONS ARE AS FOLLOWS: </p>
+
+### Centering the Design:</p>
+    Press S to select the entire design.</P>
+    Press V to vertically align it to the middle of the screen.</p>
+### Zooming In on a Specific Area:</p>
+    Left-click and drag to select the desired region.</p>
+    Right-click to bring up the context menu.</p>
+    Press Z to zoom in on the selected area.</p>
+### Getting Details of a Cell:</p>
+    Move your cursor to the cell of interest.</p>
+    Press S to select the cell.
+### In the tkcon window, enter the command "what" to display cell details.</p>
+
+![WhatsApp Image 2024-07-29 at 10 55 22 PM](https://github.com/user-attachments/assets/60445c80-2a2a-4145-acca-b2b00a2fbc0d)
+
+![WhatsApp Image 2024-07-29 at 10 55 22 PM (1)](https://github.com/user-attachments/assets/11af4acb-eff2-4e02-b52e-9a27ebc66cb1)
+
+## PERFORMING PLACEMENT IN OPENLANE
+After successfully completing floorplanning, the design process progresses to the placement stage, which includes two main phases:
+
+### Global Placement: </p> During this phase, the tool determines the approximate locations for all the standard cells in the design.</p>
+### Detailed Placement: </P> In this phase, the tool finalizes the exact positions for all the standard cells and ensures the placement is legal. Legalization involves verifying that no standard cells overlap and that they are all correctly positioned within the designated site rows.</P>
+### To initiate the placement process, use the following command
+    run_placement
+    
+
+
+
 
 
       
