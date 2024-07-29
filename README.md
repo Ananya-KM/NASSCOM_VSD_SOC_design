@@ -152,13 +152,24 @@ The Utilization Factor is defined as the ratio of the core area occupied by the 
 
 ### Aspect Ratio
 
-The Aspect Ratio is defined as the ratio of the height of the core to its width. When the Aspect Ratio is 1, the core is considered square-shaped. If the Aspect Ratio is different from 1, the core will have a rectangular shape.
+The Aspect Ratio is defined as the ratio of the height of the core to its width. When the Aspect Ratio is 1, the core is considered square-shaped. If the Aspect Ratio is different from 1, the core will have a rectangular shape. 
+
+</p> In the below case </p>
 
 #### **Aspect Ratio = (Height of the core / Width of the core)**
+
 ![Screenshot (51)](https://github.com/user-attachments/assets/b869917d-fe89-4724-96de-cfcb96cff284)
 
 #### **Utilisation Factor = (4 sq units)/(4sq units) = 1**
 #### **Aspect Ratio = (2 units)/(2 units) = 1 i.e core has Square Shape**
+
+</p> now if we take another case </p>
+
+![Screenshot (52)](https://github.com/user-attachments/assets/065d20fc-3b52-460b-b664-e7c6b343f13d)
+
+#### **Utilisation Factor = (4 sq units)/(8 sq units) = 0.5**
+#### **Aspect Ratio = (2 units)/(4 units) = 0.5 i.e core has Rectangular Shape**
+
 
 
       
