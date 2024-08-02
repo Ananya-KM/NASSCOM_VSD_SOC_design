@@ -240,8 +240,38 @@ After successfully completing floorplanning, the design process progresses to th
 
 ![WhatsApp Image 2024-07-29 at 10 55 26 PM](https://github.com/user-attachments/assets/f750f9c0-aaa0-4864-a137-be506021b8e9)
 
+# DAY 3
+### CREATION OF SPICE DECK FOR CMOS INVERTER
+</p> A Spice deck essentially contains the netlist with connectivity information, the inputs to be provided, output tap points, and additional details. </p>
 
-  
+![Screenshot (59)](https://github.com/user-attachments/assets/98e6668c-a1a3-4c8e-8008-ff1a07aea726)
+
+</p>  Nodes are required to define the netlist </p>
+
+![Screenshot (61)](https://github.com/user-attachments/assets/d9421a81-dc9d-43c4-9d72-d26aa26ced43)
+![Screenshot (62)](https://github.com/user-attachments/assets/082cd9a2-5d48-4cee-826f-c433a5db9aa4)
+
+![Screenshot (63)](https://github.com/user-attachments/assets/e9e79c0e-9b1e-4a4a-af5f-17d89934ecf0)
+
+
+## INVERTER CHARACTERISTICS
+### STATIC CHARACTERISTICS
+
+- **Switching Threshold (Vth)**: The voltage level at which the inverter switches from a high state (logic 1) to a low state (logic 0).
+- **Input Low Voltage (Vil)**: The highest input voltage that is still interpreted as logic 0.
+- **Input High Voltage (Vih)**: The lowest input voltage that is recognized as logic 1.
+- **Output Low Voltage (Vol)**: The voltage level at which the output changes from a high state to a low state.
+- **Output High Voltage (Voh)**: The voltage level at which the output changes from a low state to a high state.
+- **Noise Margins**: The voltage ranges that define the tolerance for noise. The low noise margin is the range between Vil and Vol, while the high noise margin is the range between Vih and Voh.
+
+### DYNAMIC CHARACTERISTICS
+
+- **Propagation Delays**: The duration required for the output to respond after a change in the input.
+- **Rise Time (tr)**: The time it takes for the output to move from the low voltage level (Vol) to the high voltage level (Voh).
+- **Fall Time (tf)**: The time it takes for the output to move from the high voltage level (Voh) to the low voltage level (Vol).
+
+
+
     
 
 
