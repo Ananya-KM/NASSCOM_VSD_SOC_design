@@ -271,7 +271,7 @@ After successfully completing floorplanning, the design process progresses to th
 - **Fall Time (tf)**: The time it takes for the output to move from the high voltage level (Voh) to the low voltage level (Vol).
 
   ## CMOS FABRICATION PROCESS
-  ### Creating active reagion for transistors
+ ### Creating active reagion for transistors
 ![Screenshot (64)](https://github.com/user-attachments/assets/5f3f6044-7eaa-4f84-8e96-bde0493963d1)
 
   ### Formation of Nwell and Pwell
