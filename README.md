@@ -270,9 +270,30 @@ After successfully completing floorplanning, the design process progresses to th
 - **Rise Time (tr)**: The time it takes for the output to move from the low voltage level (Vol) to the high voltage level (Voh).
 - **Fall Time (tf)**: The time it takes for the output to move from the high voltage level (Voh) to the low voltage level (Vol).
 
+  ## CMOS FABRICATION PROCESS
+  ### Creating active reagion for transistors
+![Screenshot (64)](https://github.com/user-attachments/assets/5f3f6044-7eaa-4f84-8e96-bde0493963d1)
+
+  ### Formation of Nwell and Pwell
+![Screenshot (65)](https://github.com/user-attachments/assets/3fff703e-0426-4c9f-b44f-c044a81d5a3d)
+
+  ### Formation of 'gate' terminals
+ ![Screenshot (66)](https://github.com/user-attachments/assets/d2450c55-6f64-4a55-a750-4b47b12e4c1f)
+
+  ### Formation of LDD
+ ![Screenshot (67)](https://github.com/user-attachments/assets/f86db4c6-ec68-43d6-b016-c8cb4477615f)
+
+  ### Source and Drain formation
+ ![Screenshot (68)](https://github.com/user-attachments/assets/a8d4f1a1-7f06-42b3-98e2-a0ee80df4103)
+
+  ### Formation of contacts and interconnect
+ ![Screenshot (69)](https://github.com/user-attachments/assets/d64a302d-e30d-4b85-a6a1-4431809cf5ea)
+
+  ### higher level metal formation
+ ![Screenshot (70)](https://github.com/user-attachments/assets/98e4c135-7f74-45bf-bdb9-4be24ffa44f4)
 
 
-    
+  
 
 
 
