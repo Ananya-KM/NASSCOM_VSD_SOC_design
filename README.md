@@ -394,6 +394,9 @@ In this lab, we will characterize an inverter using ngspice and Sky130 model fil
 
 
 
+
+
+
  
 
 
