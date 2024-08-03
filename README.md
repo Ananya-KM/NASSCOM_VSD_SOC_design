@@ -380,6 +380,11 @@ In this lab, we will characterize an inverter using ngspice and Sky130 model fil
     
 ![WhatsApp Image 2024-08-02 at 11 30 51 PM](https://github.com/user-attachments/assets/d2209281-c0ba-4461-83e7-38f8f70e8f00)
 
+</p> In the downloaded files , .magicrc file serves as the start-up script for MAGIC </p>
+
+### INTRODUCTION TO MAGIC & STEPS TO LOAD SKY130 TECH RULES
+    
+
 
 
 
