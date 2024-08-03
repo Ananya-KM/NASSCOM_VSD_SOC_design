@@ -292,7 +292,101 @@ After successfully completing floorplanning, the design process progresses to th
   ### higher level metal formation
  ![Screenshot (70)](https://github.com/user-attachments/assets/98e4c135-7f74-45bf-bdb9-4be24ffa44f4)
 
+ # DAY 3 (Labs)
+ </p> First, we modified the IO PINS of the macro in the floorplan DEF file as shown in the image below. Then, we reran the floorplan and observed the changes. </p>
+ set ::env(FP_IO_MODE) 2
+</p> after making changes in floorplan def file that the pins are no more equidistant. </p>
 
+![Screenshot (77)](https://github.com/user-attachments/assets/039be199-08f0-4a88-8b68-32b81bf74b47)
+
+ ## GIT CLONE THE "vsdstdcelldesign"
+#### Go to Openlane directory and use the following command:
+    git clone <url of the github repo you want to clone>
+    git clone https://github.com/nickson-jose/vsdstdcelldesign.git
+![WhatsApp Image 2024-08-02 at 11 30 50 PM](https://github.com/user-attachments/assets/fa084127-8b0f-4870-838c-587dbcd36f1c)
+
+ ![WhatsApp Image 2024-08-02 at 11 30 51 PM (1)](https://github.com/user-attachments/assets/a01a873e-4723-4b57-b5f4-ffda9aa1bcac)
+ ##### From the above image, we can see that the cloning was successful. Next, we will open the 'mag' file, which requires the 'tech' file located in the following directory:</p>
+       vsduser@vsdsquadron:~/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic$ 
+ ##### so first we copy that file here, by using the following command:
+       cp sky130A.tech /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign
+ ##### It is copied successfully. Now, open the mag file magic
+       magic -T sky130A.tech sky130_inv.mag &
+  
+ ![WhatsApp Image 2024-08-02 at 11 30 51 PM (3)](https://github.com/user-attachments/assets/f9b8c54c-b388-45bb-a249-a80819ede81b)
+ 
+  ![WhatsApp Image 2024-08-02 at 11 30 51 PM (2)](https://github.com/user-attachments/assets/d4d6c544-69dc-4085-81f6-7a3f87176eae)
+
+## TO EXTRACT THE NETLIST IN MAGIC
+    % extract all
+    % ext2spice cthresh 0 rthresh 0
+ 
+![WhatsApp Image 2024-08-02 at 11 30 51 PM (9)](https://github.com/user-attachments/assets/5bfedf57-7ec3-4c54-880a-ec6a2d5f17f0)
+
+![WhatsApp Image 2024-08-02 at 11 30 51 PM (7)](https://github.com/user-attachments/assets/ec669143-01d9-42da-95f4-96a35cd09fae)
+
+</p> Now, lets open the created spice file:
+
+![WhatsApp Image 2024-08-02 at 11 30 52 PM (8)](https://github.com/user-attachments/assets/19abd143-750e-48d8-b612-2798c43adef1)
+
+</p> Now the next step is to run the SPICE file in ngspice tool by using command ngspice sky130_inv.spice </p>
+
+![Screenshot (73)](https://github.com/user-attachments/assets/0ea430ff-b34d-4ced-941e-ae8951f3687e)
+
+#### Inverter Characterization using Sky130 Model Files
+In this lab, we will characterize an inverter using ngspice and Sky130 model files, aiming to extract key parameters from the simulation results.
+
+**Parameters to Characterize:**
+
+1. **Rise Time:**
+   - Definition: The time taken for the output waveform to transition from 20% to 80% of its maximum value.
+   - Data Points: 
+     - \( x_0 = 6.16138 \times 10^{-9} \) s, \( y_0 = 0.660007 \)
+     - \( x_1 = 6.20366 \times 10^{-9} \) s, \( y_1 = 2.64009 \)
+   - Calculation: 
+     - Rise time \( = x_1 - x_0 = 0.0422 \) ns
+
+2. **Fall Time:**
+   - Definition: The time taken for the output waveform to transition from 80% to 20% of its maximum value.
+   - Data Points: 
+     - \( x_0 = 8.04034 \times 10^{-9} \) s, \( y_0 = 2.64003 \)
+     - \( x_1 = 8.06818 \times 10^{-9} \) s, \( y_1 = 0.659993 \)
+   - Calculation: 
+     - Fall time \( = x_1 - x_0 = 0.0278 \) ns
+
+3. **Propagation Delay:**
+   - Definition: The time taken for a 50% transition at the output (0 to 1) corresponding to a 50% transition at the input (1 to 0).
+   - Data Points: 
+     - \( x_0 = 2.18449 \times 10^{-9} \) s, \( y_0 = 1.64994 \)
+     - \( x_1 = 2.15 \times 10^{-9} \) s, \( y_1 = 1.65011 \)
+   - Calculation: 
+     - Propagation delay \( = x_1 - x_0 = 0.034 \) ns
+
+4. **Cell Fall Delay:**
+   - Definition: The time taken for a 50% transition at the output (1 to 0) corresponding to a 50% transition at the input (0 to 1).
+   - Data Points: 
+     - \( x_0 = 4.05432 \times 10^{-9} \) s, \( y_0 = 1.65 \)
+     - \( x_1 = 4.05001 \times 10^{-9} \) s, \( y_1 = 1.65 \)
+   - Calculation: 
+     - Cell fall delay \( = x_1 - x_0 = 0.0043 \) ns
+
+
+
+ 
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+ 
   
 
 
