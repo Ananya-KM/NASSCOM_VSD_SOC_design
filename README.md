@@ -369,6 +369,17 @@ In this lab, we will characterize an inverter using ngspice and Sky130 model fil
      - \( x_1 = 4.05001 \times 10^{-9} \) s, \( y_1 = 1.65 \)
    - Calculation: 
      - Cell fall delay \( = x_1 - x_0 = 0.0043 \) ns
+## INTRODUCTION TO SKY130 PDK
+### Now us the follwoing command to download the Lab files while being in the home directory :
+    sudo wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
+
+![WhatsApp Image 2024-08-02 at 11 30 52 PM (1)](https://github.com/user-attachments/assets/91f43ef9-04ba-4519-9b83-ba97fafe940c)
+
+### Now that you have downloaded the zip file, use the following command to extract the lab files:
+    sudo tar xfz drc_tests.tgz
+    
+![WhatsApp Image 2024-08-02 at 11 30 51 PM](https://github.com/user-attachments/assets/d2209281-c0ba-4461-83e7-38f8f70e8f00)
+
 
 
 
