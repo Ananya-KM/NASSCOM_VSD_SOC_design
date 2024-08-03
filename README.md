@@ -383,7 +383,13 @@ In this lab, we will characterize an inverter using ngspice and Sky130 model fil
 </p> In the downloaded files , .magicrc file serves as the start-up script for MAGIC </p>
 
 ### INTRODUCTION TO MAGIC & STEPS TO LOAD SKY130 TECH RULES
-    
+ Run the command magic -d XR to open the Magic tool.
+
+ ![WhatsApp Image 2024-08-02 at 11 30 52 PM (3)](https://github.com/user-attachments/assets/bd1fd2ad-0bfe-4cd8-8e8b-6ec2c656e0ed)
+ Let us start by opening met3.mag file in magic
+ 
+![WhatsApp Image 2024-08-02 at 11 30 52 PM (4)](https://github.com/user-attachments/assets/87038c85-1e50-4844-a5ad-8612572b7155)
+
 
 
 
