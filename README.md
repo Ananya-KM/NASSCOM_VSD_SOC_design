@@ -1,4 +1,4 @@
-# _DIGITAL_VSD_SOC_Design
+![WhatsApp Image 2024-08-02 at 11 30 52 PM (2)](https://github.com/user-attachments/assets/ff4b9dad-4930-41b2-b7e5-cff42cde6229)# _DIGITAL_VSD_SOC_Design
 ## PHYSICAL DESIGN IN VLSI
 </P> Physical design in VLSI is the process of converting a circuit's high-level description into a detailed physical layout on silicon. It involves steps like partitioning, floorplanning, placement, routing, and verification to optimize performance, area, power, and manufacturability. The goal is to create a layout that can be fabricated into a functional chip.
 
@@ -377,8 +377,10 @@ In this lab, we will characterize an inverter using ngspice and Sky130 model fil
 
 ### Now that you have downloaded the zip file, use the following command to extract the lab files:
     sudo tar xfz drc_tests.tgz
-    
-![WhatsApp Image 2024-08-02 at 11 30 51 PM](https://github.com/user-attachments/assets/d2209281-c0ba-4461-83e7-38f8f70e8f00)
+ ![WhatsApp Image 2024-08-02 at 11 30 52 PM (2)](https://github.com/user-attachments/assets/b8db3815-8c8f-41ed-a85c-5de1cf1bb402)
+
+
+
 
 </p> In the downloaded files , .magicrc file serves as the start-up script for MAGIC </p>
 
