@@ -390,6 +390,31 @@ In this lab, we will characterize an inverter using ngspice and Sky130 model fil
  
 ![WhatsApp Image 2024-08-02 at 11 30 52 PM (4)](https://github.com/user-attachments/assets/87038c85-1e50-4844-a5ad-8612572b7155)
 
+### Instructions:
+
+#### Select an Area and Fill with Metal 3
+
+1. **Open the Magic GUI.**
+2. **Select the desired area on your layout.**
+3. **Navigate to the metal 3 layer.**
+4. **Press `P` to fill the selected region with metal 3.**
+
+#### Create the VIA2 Mask
+
+1. **Open the tkcon terminal within Magic.**
+2. **Type the command:** `cif see VIA2`.
+3. **The metal 3-filled area will now be associated with the VIA2 mask.**
+
+![Screenshot (84)](https://github.com/user-attachments/assets/0d502558-4e84-46aa-99db-77fc432de2b5)
+
+![Screenshot (85)](https://github.com/user-attachments/assets/5f1c0960-f5a2-4e74-bbb7-58f8f8cc585d)
+
+use 'feed clear' to go back to previous view
+
+
+
+
+
 
 
 
