@@ -411,10 +411,12 @@ In this lab, we will characterize an inverter using ngspice and Sky130 model fil
 
 use 'feed clear' to go back to previous view
 
+## Lab exercise to fix Poly-9 error in Sky130 tech file
+</P> Load 'poly.mag' file in magic </P>
 
+![Screenshot (79)](https://github.com/user-attachments/assets/9618ac57-dcc1-40b0-b34d-267e8bce5dcf)
 
-
-
+</p> Verify the spacing between the poly resistor and the poly in the layout and compare it with the specified value on the Skywater website. Correct any spacing errors by adjusting the layout to meet the specified requirement. Recheck the spacing to confirm it now meets the specified value.</p>
 
 
 
