@@ -417,13 +417,32 @@ use 'feed clear' to go back to previous view
 
 </p> Verify the spacing between the poly resistor and the poly in the layout and compare it with the specified value on the Skywater website. Correct any spacing errors by adjusting the layout to meet the specified requirement. Recheck the spacing to confirm it now meets the specified value.</p>
 
+![Screenshot (86)](https://github.com/user-attachments/assets/4ae9f4e3-4087-483b-818a-235ce6cb4108)
 
+</p> make the necessary changes to the sky130A.tech file and load the updated tech file in tkcon window,after doing so run the drc checks again </p>
 
+![Screenshot (87)](https://github.com/user-attachments/assets/b6f3f642-70fd-4ec7-8673-8d0bccdef62b)
 
+![Screenshot (88)](https://github.com/user-attachments/assets/e77b5e86-79ca-4ac0-93a1-10bdbc8a53af)
 
+</p> Reload the technology file by entering `tech load sky130A.tech` in the terminal. Then, in the `tkcon` terminal, run `drc check` to recheck the design rule checks (DRC). </p>
 
+![Screenshot (89)](https://github.com/user-attachments/assets/a0a708c3-58c6-4c90-b9f9-14c240f7485e)
 
+### Lab challenge to describe DRC error as geometrical construct
+</p> Now load nwell.mag file into the magic and check for violations. </p>
+
+![WhatsApp Image 2024-08-02 at 11 30 52 PM (6)](https://github.com/user-attachments/assets/606ad051-6e29-4086-805d-fe1e6a362da1)
+
+In the above layout we have some violations, Open tech file and make changes as shown:
+
+![Screenshot (92)](https://github.com/user-attachments/assets/50887aad-bd7a-48e4-9a94-9c97fc6b6807)
+
+![Screenshot (93)](https://github.com/user-attachments/assets/95bef497-bfba-4c08-8e76-554654ab9a72)
+
+</p>  after making necessary changes in the tech file as shown in the above images,reload the tech file in tkcon window and again perform the designated operation of drc </p>
  
+![Screenshot (94)](https://github.com/user-attachments/assets/a2076436-6246-4b50-9fb4-65925ecad27c)
 
 
  
