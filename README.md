@@ -444,12 +444,26 @@ In the above layout we have some violations, Open tech file and make changes as 
  
 ![Screenshot (94)](https://github.com/user-attachments/assets/a2076436-6246-4b50-9fb4-65925ecad27c)
 
-
+# DAY 4
+## DELAY TABLES, CTS and TIMING ANALYSIS
+### Introduction to delay tables 
+![Screenshot (95)](https://github.com/user-attachments/assets/957f23be-101d-43cc-8586-84eb712638fd)
+ </p> Each node at every level is subjected to the same load, resulting in no skew. However, if the loads were to differ across nodes, skew would be introduced. </p>
  
-
+### Introduction to CTS
  
+![Screenshot (98)](https://github.com/user-attachments/assets/2e3bd4ce-7cfb-4341-9a48-25b80ceaba99)
+![Screenshot (97)](https://github.com/user-attachments/assets/48a845b1-19df-42fe-be58-5c50382dab83)
+## TIMING ANALYSIS
 
+ ### Setup Timing Analysis with real time clocks
+ 
+ ![Screenshot (99)](https://github.com/user-attachments/assets/0066ad8d-c6fb-4b0a-9f21-9b188193a48e)
 
+### Hold Timing Analysis
+ 
+![Screenshot (100)](https://github.com/user-attachments/assets/d99474c7-5550-44bc-b56b-36fcd49d597a)
+![Screenshot (101)](https://github.com/user-attachments/assets/e05a7251-9e82-4853-a0d9-7b2243194a55)
 
 
 
