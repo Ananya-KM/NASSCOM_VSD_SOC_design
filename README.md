@@ -572,6 +572,8 @@ now,we will run floorplan,but we observe on running run_placement we get error
        run_placement
 ![WhatsApp Image 2024-08-05 at 10 26 40 PM (2)](https://github.com/user-attachments/assets/eccae563-d129-4d3e-8921-41820b731d35)
 
+![Screenshot (104)](https://github.com/user-attachments/assets/ef4505b0-6b14-4ed3-980e-3d602e72a7ad)
+
 
       
 
