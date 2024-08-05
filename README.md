@@ -1,4 +1,4 @@
-# _DIGITAL_VSD_SOC_Design
+![image](https://github.com/user-attachments/assets/73cd8bb7-5da1-4c76-8cc1-c9b6299a1e8c)# _DIGITAL_VSD_SOC_Design
 ## PHYSICAL DESIGN IN VLSI
 </P> Physical design in VLSI is the process of converting a circuit's high-level description into a detailed physical layout on silicon. It involves steps like partitioning, floorplanning, placement, routing, and verification to optimize performance, area, power, and manufacturability. The goal is to create a layout that can be fabricated into a functional chip.
 
@@ -517,6 +517,46 @@ In the above layout we have some violations, Open tech file and make changes as 
   Now, open the file  less sky130_vsdinv.lef
   
   ![WhatsApp Image 2024-08-05 at 10 26 29 PM (8)](https://github.com/user-attachments/assets/f3f551ba-6e4e-4a6f-8350-eb6039cfa204)
+
+## Introduction to timing libs and steps to include new cell in synthesis
+##### Now, to copy the files in src directory, use the following command:
+      cp sky130_vsdinv.lef /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src
+
+  ![WhatsApp Image 2024-08-05 at 10 26 29 PM (1)](https://github.com/user-attachments/assets/0f34fcfe-0ab8-4165-b477-e6137a786150)
+  
+  ![WhatsApp Image 2024-08-05 at 10 26 29 PM (2)](https://github.com/user-attachments/assets/d83c368a-e9f7-4317-acf5-419420174ec4)
+
+##### now, copy the follwoing files shown in image below in src directory, us the following command:
+      cp sky130_fd_sc_hd__* /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src
+      
+ ![WhatsApp Image 2024-08-05 at 10 26 33 PM](https://github.com/user-attachments/assets/eab21255-baea-425d-ba98-96c2fa840ef4)
+ 
+ #### Go to picorv32a dircetory and open the file using vim modify the config.tcl file by using the following command
+      vim config.tcl  
+ ![Screenshot (102)](https://github.com/user-attachments/assets/b0824a0f-d991-426c-b216-ff840c8b117e)
+
+ </p> now invoke the docker and follow the regular steps 
+ 
+ ##### as shown 
+       ./flow.tcl -interactive
+       package require openlane 0.9
+       prep -design picorv32a -tag 12-07_11-26 -overwrite
+
+ ![WhatsApp Image 2024-08-05 at 10 26 33 PM (1)](https://github.com/user-attachments/assets/59de5ef2-bbfd-48f1-95a6-d31fe19e03e0)
+
+##### now run_synthesis
+      run_syntesis
+  ![WhatsApp Image 2024-08-05 at 10 26 35 PM](https://github.com/user-attachments/assets/b74053ab-ef25-4893-94fc-c969271a1b86)
+  
+![WhatsApp Image 2024-08-05 at 10 26 35 PM (1)](https://github.com/user-attachments/assets/2c399c87-860a-46c1-b58e-1f6af37007ae)
+</p> so now the synthesis is completed succesfully and from the above report we can see that the 
+
+#### total negative slack(tns) is -711.59
+
+#### worst slack (wns) is -23.89
+
+    
+      
 
 
 
