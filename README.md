@@ -555,6 +555,27 @@ In the above layout we have some violations, Open tech file and make changes as 
 
 #### worst slack (wns) is -23.89
 
+</p> to fix the slak make the following changes: </p>
+
+![WhatsApp Image 2024-08-05 at 10 26 40 PM](https://github.com/user-attachments/assets/fd2f9a97-e64f-462f-8473-361c9031a265)
+
+now,we will run floorplan,but we observe on running run_placement we get error
+
+##### so we use 
+      init_floorplan
+      place_io
+      tap_decap_or
+      
+ ![WhatsApp Image 2024-08-05 at 10 26 40 PM (1)](https://github.com/user-attachments/assets/d60f29f9-ffda-44ec-8006-614e5a4eae09)
+
+ ##### Now, as floorplan stage is completed , we run placement
+       run_placement
+![WhatsApp Image 2024-08-05 at 10 26 40 PM](https://github.com/user-attachments/assets/c4f66fe8-e16b-424e-ac4b-6f363da9fa54)
+
+      
+
+
+
     
       
 
