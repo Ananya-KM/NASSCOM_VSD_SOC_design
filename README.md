@@ -465,7 +465,36 @@ In the above layout we have some violations, Open tech file and make changes as 
 ![Screenshot (100)](https://github.com/user-attachments/assets/d99474c7-5550-44bc-b56b-36fcd49d597a)
 ![Screenshot (101)](https://github.com/user-attachments/assets/e05a7251-9e82-4853-a0d9-7b2243194a55)
 
+# DAY 4 (labs)
+## PRE-LAYOUT TIMING ANALYSIS & IMPORTANCE OF GOOD CLOCK TREE
+### TIMING MODELLING USING DELAY TABLES
+#### Converting the Grid Info to Track Info
+</p> In physical design, converting grid information, such as rows and columns, into track information is essential. Tracks are predefined horizontal and vertical paths on each metal layer. When designing standard cells, it's important to ensure that input and output ports align with the intersections of vertical and horizontal tracks. Additionally, the standard cell's width should be an odd multiple of the horizontal track pitch, and its height should be an odd multiple of the vertical track pitch. </p>
 
+</p> To proceed, we need to extract the LEF (Library Exchange Format) file for the Inverter cell. This file provides critical information necessary for the place-and-route (PNR) process. Furthermore, to understand the available horizontal and vertical tracks on each metal layer, one should refer to the `tracks.info` file. This file details the pitch, spacing, and other relevant parameters needed for efficient routing. </p>
+
+##### Command to open the custom Inverter Layout in Magic, first go to the 'vsdstdcelldesign' dircetory and then type the following command:
+     magic -T sky130A.tech sky130_inv.mag &
+     
+![WhatsApp Image 2024-08-05 at 10 26 28 PM](https://github.com/user-attachments/assets/98d9aad3-c862-489e-a4af-e4989f377893)
+
+##### Open the tracks.info file to know more about tracks
+      
+      /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd
+      less tracks.info
+
+   ![WhatsApp Image 2024-08-05 at 10 26 28 PM (1)](https://github.com/user-attachments/assets/31b73093-ca79-43a2-89c7-8cf84f147d21)
+##### To set grids as tracks of locali layer, use the follwoing command:
+       grid 0.46um 0.34um 0.23um 0.17um
+ 
+![WhatsApp Image 2024-08-05 at 10 26 29 PM (1)](https://github.com/user-attachments/assets/d3c00685-a819-4040-b843-565f00773151)
+
+</p> now we can see that the  Input and output ports are aligned with the intersections of vertical and horizontal tracks. </p>
+
+![WhatsApp Image 2024-08-05 at 10 26 29 PM (2)](https://github.com/user-attachments/assets/be986ef0-6f8e-4da6-b9d9-3639b396c7ab)
+
+
+     
 
 
 
