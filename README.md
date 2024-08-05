@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/73cd8bb7-5da1-4c76-8cc1-c9b6299a1e8c)# _DIGITAL_VSD_SOC_Design
+# _DIGITAL_VSD_SOC_Design
 ## PHYSICAL DESIGN IN VLSI
 </P> Physical design in VLSI is the process of converting a circuit's high-level description into a detailed physical layout on silicon. It involves steps like partitioning, floorplanning, placement, routing, and verification to optimize performance, area, power, and manufacturability. The goal is to create a layout that can be fabricated into a functional chip.
 
