@@ -493,6 +493,33 @@ In the above layout we have some violations, Open tech file and make changes as 
 
 ![WhatsApp Image 2024-08-05 at 10 26 29 PM (2)](https://github.com/user-attachments/assets/be986ef0-6f8e-4da6-b9d9-3639b396c7ab)
 
+# Converting magic layout to standard cell LEF
+##### follow the git repo given below and set up the ports
+      https://github.com/nickson-jose/vsdstdcelldesign.git
+
+  ![WhatsApp Image 2024-08-05 at 10 26 29 PM (3)](https://github.com/user-attachments/assets/5192ef9b-fef6-43da-bbd6-16195223cadd)
+
+![WhatsApp Image 2024-08-05 at 10 26 29 PM (4)](https://github.com/user-attachments/assets/ff1a2348-6966-41bd-b646-69931bb8175f)
+
+</p> to extract the LEF file. First save .mag file by using the command ``save sky130_vsdinv.mag``` in the tkcon terminal. </p>
+
+##### Now, use the follwoing command to open the saved mag file:
+      magic -T sky130A.tch sky130_vsdinv.mag &
+      
+   ![WhatsApp Image 2024-08-05 at 10 26 29 PM (9)](https://github.com/user-attachments/assets/ac6a6ea9-3a82-4871-b2e7-2a1bc306ee27)
+
+ ##### To extract the Lef file use the command:
+       lef write 
+   ![WhatsApp Image 2024-08-05 at 10 26 29 PM (7)](https://github.com/user-attachments/assets/870f5966-6b28-4540-a1f4-efb35c980df2)
+   
+   ![WhatsApp Image 2024-08-05 at 10 26 29 PM (10)](https://github.com/user-attachments/assets/01b2ec2e-3b9b-4156-9a53-f4d0c40b163b)
+
+  Now, open the file  less sky130_vsdinv.lef
+  
+  ![WhatsApp Image 2024-08-05 at 10 26 29 PM (8)](https://github.com/user-attachments/assets/f3f551ba-6e4e-4a6f-8350-eb6039cfa204)
+
+
+
 
      
 
