@@ -570,7 +570,8 @@ now,we will run floorplan,but we observe on running run_placement we get error
 
  ##### Now, as floorplan stage is completed , we run placement
        run_placement
-![WhatsApp Image 2024-08-05 at 10 26 40 PM](https://github.com/user-attachments/assets/c4f66fe8-e16b-424e-ac4b-6f363da9fa54)
+![WhatsApp Image 2024-08-05 at 10 26 40 PM (2)](https://github.com/user-attachments/assets/eccae563-d129-4d3e-8921-41820b731d35)
+
 
       
 
