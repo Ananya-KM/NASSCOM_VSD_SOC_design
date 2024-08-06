@@ -574,12 +574,39 @@ now,we will run floorplan,but we observe on running run_placement we get error
 
 ![Screenshot (104)](https://github.com/user-attachments/assets/ef4505b0-6b14-4ed3-980e-3d602e72a7ad)
 
+### Post synthesis timing analysis using openSTA.
+</p> we need to create pre_sta.conf and my_base.sdc files using vi , as it is not present initially
 
-      
+##### pre_sta.conf
 
+![WhatsApp Image 2024-08-05 at 10 26 41 PM](https://github.com/user-attachments/assets/7601ab99-2328-4d99-a4ac-29765831b871)
 
+##### my_base.sdc
+![WhatsApp Image 2024-08-05 at 10 26 41 PM (3)](https://github.com/user-attachments/assets/684c16ec-f9fb-4638-accc-efffd1e7ae59)
 
-    
+##### now run the command
+      sta pre_sta.conf
+![Screenshot (106)](https://github.com/user-attachments/assets/d78e38c0-96ab-4e44-811e-84ff261bf1f5)
+
+![Screenshot (107)](https://github.com/user-attachments/assets/6b97658b-d85b-440d-9ed6-385126b343a5)
+
+</p> Since the slack is met and is positive, we can continue with the flow.</p> Since the slack is met and is positive, we can continue with the flow </p>
+
+![WhatsApp Image 2024-08-05 at 10 26 40 PM (3)](https://github.com/user-attachments/assets/5d192494-cb4f-469b-b359-e2049d738899)
+
+</p> After the synthesis, floorplan, and placement stages, we now need to proceed with the Clock Tree Synthesis (CTS) stage. During this stage, we will observe the obtained slack to determine whether it is favorable or not. </p>
+
+##### use the command:
+      run_cts
+  ![WhatsApp Image 2024-08-05 at 10 26 40 PM (4)](https://github.com/user-attachments/assets/4c4f03fd-55ba-4792-a41b-d7561cae5f59)
+##### now,invoke the openroad using the command:
+      openroad
+</p> perform various operations of read_def,read_lef,read_db,write_db etc in openroad </p>
+ </p> These stages are being performed to achieve the desired positive slack, which we have already obtained. We will verify this again by performing static timing analysis (STA). </p>
+ 
+ ![Screenshot (108)](https://github.com/user-attachments/assets/2815777d-e1ad-4d01-a936-f928228863bf)
+ ![Screenshot (109)](https://github.com/user-attachments/assets/4ff70b5f-a660-4f92-a68e-e38405e3efc6)
+
       
 
 
