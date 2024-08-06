@@ -607,6 +607,83 @@ now,we will run floorplan,but we observe on running run_placement we get error
  ![Screenshot (108)](https://github.com/user-attachments/assets/2815777d-e1ad-4d01-a936-f928228863bf)
  ![Screenshot (109)](https://github.com/user-attachments/assets/4ff70b5f-a660-4f92-a68e-e38405e3efc6)
 
+# DAY 5
+##### To know which stage was done previously in the flow? use the follwoing command 
+      echo $::env(CURRENT_DEF)
+      
+  ![WhatsApp Image 2024-08-06 at 11 27 47 PM](https://github.com/user-attachments/assets/63f0afd3-f4f7-4ffe-a46f-f3993508e58b)
+
+
+ ## INRODUCTION TO ROUTING ALGORITHM
+  #### maze routing
+  ![Screenshot (116)](https://github.com/user-attachments/assets/142b01bc-d40b-4b55-b9fb-f2558b88ac91)
+  
+  ![Screenshot (117)](https://github.com/user-attachments/assets/3f49fe61-342f-4ef9-81b6-56950ee42180)
+
+  #### Building routing grid with standard dimensions
+  
+  ![Screenshot (118)](https://github.com/user-attachments/assets/ee6a0cf3-6e44-4009-99c5-eebee8215426)
+
+ </p> There are various routes possible, but routes with fewer bands are preferred, ideally a single band. There are other algorithms that can replace it since it is more time-consuming. </p>
+ 
+ ![Screenshot (119)](https://github.com/user-attachments/assets/034152d0-61ec-4794-b601-3ec5ebef1df9)
+
+ While doing routing , DRC Rules need to be followe
+
+## ROUTING
+![Screenshot (120)](https://github.com/user-attachments/assets/c5780c36-2dca-4589-9781-0941ef5e1bef)
+
+**Routing**: This process creates physical connections between VLSI design components after placement. It includes:
+
+- **Global Routing**: Determines general paths on a grid without detailed specifics.
+- **Detailed Routing**: Defines exact wire paths, geometries, and layers at the transistor level.
+
+**Routing Algorithms**:
+- **Maze Routing**: Finds optimal paths by exploring all possible routes on a grid.
+- **Channel Routing**: Routes within constrained regions or channels.
+
+**Routing Layers**: Use multiple metal layers, with lower layers for local and higher layers for global connections.
+
+**Routing Challenges**:
+- **Congestion**: Avoiding crowded paths to prevent performance issues.
+- **Crosstalk**: Minimizing interference between adjacent signal paths.
+- **Delay**: Managing signal propagation delays to meet timing constraints.
+
+**Design Rule Checking (DRC)**: Ensures VLSI design adheres to manufacturing rules provided by the foundry. It involves:
+
+- **Design Rules**:
+  - **Minimum Width/Spacing**: Ensuring features meet size and distance requirements.
+  - **Enclosure/Overlap**: Ensuring proper feature connectivity and functionality.
+- **DRC Checks**:
+  - **Geometric Checks**: Verify physical dimensions and spacing.
+  - **Connectivity Checks**: Ensure correct connections and no shorts.
+  - **Electrical Checks**: Verify electrical performance criteria.
+
+**DRC Workflow**: Define rules, verify layout with DRC tools, correct errors, and re-verify.
+
+# DAY 5(LABS)
+
+##### Now the last stage in the design is Routing , us ethe following command:
+      run_routing
+ ![WhatsApp Image 2024-08-06 at 11 27 15 PM](https://github.com/user-attachments/assets/02b0bfd0-2e24-4ac0-867f-e64d0a32f33f)
+
+![WhatsApp Image 2024-08-06 at 11 27 47 PM](https://github.com/user-attachments/assets/e05d1cf0-4333-4815-93c2-79044db63ab5)
+![WhatsApp Image 2024-08-06 at 11 27 47 PM (1)](https://github.com/user-attachments/assets/96d567bb-568c-462b-9dcd-7f4f6b564f94)
+
+![WhatsApp Image 2024-08-06 at 11 27 47 PM (2)](https://github.com/user-attachments/assets/64cf7d57-3439-4ff7-9ee4-8209f24a2cdc)
+
+##### To view the final layout, use the following command:
+       magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/22-07_15-00/tmp/merged.lef def read /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/22-07_15-00/results/routing/picorv32a.def &
+       
+  ![Screenshot (121)](https://github.com/user-attachments/assets/8a84c185-4bac-4252-8158-79891103983a)
+
+![Screenshot (122)](https://github.com/user-attachments/assets/56191abf-5012-4261-8e82-aecc2486528a)
+
+#### To view the Parsitic Extraction file, Go to the follwoing directory:
+
+   ![WhatsApp Image 2024-08-06 at 11 27 56 PM](https://github.com/user-attachments/assets/c2c9ca34-6029-4ad9-b03b-4f0f4f153424)
+
+
       
 
 
