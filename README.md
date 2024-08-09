@@ -317,6 +317,13 @@ After successfully completing floorplanning, the design process progresses to th
  
   ![WhatsApp Image 2024-08-02 at 11 30 51 PM (2)](https://github.com/user-attachments/assets/d4d6c544-69dc-4085-81f6-7a3f87176eae)
 
+## CMOS inverter study with Magic
+
+![Screenshot (129)](https://github.com/user-attachments/assets/593098dd-ed22-4fbd-9594-7ca3139359f4)
+![Screenshot (130)](https://github.com/user-attachments/assets/7637a6bd-24ca-4707-8afb-dd1481dcb5b4)
+![Screenshot (135)](https://github.com/user-attachments/assets/08f9590c-9e93-496b-8a93-190de7becbae)
+
+
 ## TO EXTRACT THE NETLIST IN MAGIC
     % extract all
     % ext2spice cthresh 0 rthresh 0
