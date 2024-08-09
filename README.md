@@ -561,9 +561,9 @@ In the above layout we have some violations, Open tech file and make changes as 
 ![WhatsApp Image 2024-08-05 at 10 26 35 PM (1)](https://github.com/user-attachments/assets/2c399c87-860a-46c1-b58e-1f6af37007ae)
 </p> so now the synthesis is completed succesfully and from the above report we can see that the 
 
-#### total negative slack(tns) is -711.59
+#### total negative slack(tns) is -759.46
 
-#### worst slack (wns) is -23.89
+#### worst slack (wns) is -24.89
 
 </p> to fix the slak make the following changes: </p>
 
