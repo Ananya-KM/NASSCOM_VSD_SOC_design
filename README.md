@@ -681,7 +681,9 @@ now,we will run floorplan,but we observe on running run_placement we get error
 ![WhatsApp Image 2024-08-06 at 11 27 47 PM](https://github.com/user-attachments/assets/e05d1cf0-4333-4815-93c2-79044db63ab5)
 ![WhatsApp Image 2024-08-06 at 11 27 47 PM (1)](https://github.com/user-attachments/assets/96d567bb-568c-462b-9dcd-7f4f6b564f94)
 
-![WhatsApp Image 2024-08-06 at 11 27 47 PM (2)](https://github.com/user-attachments/assets/64cf7d57-3439-4ff7-9ee4-8209f24a2cdc)
+![Screenshot (140)](https://github.com/user-attachments/assets/d64dcfc4-c479-48e0-9b68-db173187ddf1)
+
+
 
 ##### To view the final layout, use the following command:
        magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/22-07_15-00/tmp/merged.lef def read /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/22-07_15-00/results/routing/picorv32a.def &
