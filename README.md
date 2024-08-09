@@ -596,13 +596,14 @@ now,we will run floorplan,but we observe on running run_placement we get error
 
 ##### now run the command
       sta pre_sta.conf
-![Screenshot (106)](https://github.com/user-attachments/assets/d78e38c0-96ab-4e44-811e-84ff261bf1f5)
-
-![Screenshot (107)](https://github.com/user-attachments/assets/6b97658b-d85b-440d-9ed6-385126b343a5)
-
+      
+![Screenshot (132)](https://github.com/user-attachments/assets/196c8a8f-d3e1-4bee-98c5-f855e82acd3d)
+![Screenshot (133)](https://github.com/user-attachments/assets/faca2534-7e2b-4158-b939-c137fae00e97)
+     
 </p> Since the slack is met and is positive, we can continue with the flow.</p> Since the slack is met and is positive, we can continue with the flow </p>
 
-![WhatsApp Image 2024-08-05 at 10 26 40 PM (3)](https://github.com/user-attachments/assets/5d192494-cb4f-469b-b359-e2049d738899)
+![Screenshot (134)](https://github.com/user-attachments/assets/7562611c-680e-475a-832f-a443b8c3e5e3)
+
 
 </p> After the synthesis, floorplan, and placement stages, we now need to proceed with the Clock Tree Synthesis (CTS) stage. During this stage, we will observe the obtained slack to determine whether it is favorable or not. </p>
 
