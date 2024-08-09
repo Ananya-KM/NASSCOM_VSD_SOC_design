@@ -336,6 +336,9 @@ After successfully completing floorplanning, the design process progresses to th
 
 ![WhatsApp Image 2024-08-02 at 11 30 52 PM (8)](https://github.com/user-attachments/assets/19abd143-750e-48d8-b612-2798c43adef1)
 
+![Screenshot (131)](https://github.com/user-attachments/assets/fa86cd6f-c87f-4907-a4ea-de3f68a11c79)
+
+
 </p> Now the next step is to run the SPICE file in ngspice tool by using command ngspice sky130_inv.spice </p>
 
 ![Screenshot (73)](https://github.com/user-attachments/assets/0ea430ff-b34d-4ced-941e-ae8951f3687e)
@@ -611,8 +614,8 @@ now,we will run floorplan,but we observe on running run_placement we get error
 </p> perform various operations of read_def,read_lef,read_db,write_db etc in openroad </p>
  </p> These stages are being performed to achieve the desired positive slack, which we have already obtained. We will verify this again by performing static timing analysis (STA). </p>
  
- ![Screenshot (108)](https://github.com/user-attachments/assets/2815777d-e1ad-4d01-a936-f928228863bf)
- ![Screenshot (109)](https://github.com/user-attachments/assets/4ff70b5f-a660-4f92-a68e-e38405e3efc6)
+ ![Screenshot (136)](https://github.com/user-attachments/assets/5063755d-dc0b-4fdd-90fe-b5e7009daea2)
+
 
 # DAY 5
 ##### To know which stage was done previously in the flow? use the follwoing command 
